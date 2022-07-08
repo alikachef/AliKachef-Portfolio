@@ -1,0 +1,101 @@
+
+.projects{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.headerP{
+    background: rgba(0, 0, 0 ,0.6);
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 26px;
+
+}
+.headerP > h1{
+    margin: 0;
+}
+
+.char{
+    margin: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.displayP{
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.projectP {
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.projectImg {
+    width: 100%;
+}
+
+.projectB{
+    display: flex;
+    position:absolute;
+    width: 99%;
+    height: 99%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+    text-align: center;
+}
+.projectB > p {
+    text-align: center;
+    padding: 15px;
+}
+
+.projectB > h1{
+    margin: 0;
+   text-align: center;
+}
+
+
+
+
+.projectB:hover{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+    .projectP { 
+
+        display: block;
+        padding-left: 0;
+        background-color: rgba(0, 0, 0, 0.456);  
+        margin-bottom: 20px;  
+        max-width: 350px;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    .projectB { 
+        box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+        position: relative;
+        display: block;
+        padding-left: 0;
+        opacity: 1;
+        background-color: rgba(10, 10, 10, 0.44);
+    }
+}
